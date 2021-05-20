@@ -1,0 +1,135 @@
+/* Write some CSS below */
+
+body {
+	font-family: 'Overpass', sans-serif;
+	font-size: 18px;
+	color: rgb(80, 80, 80);
+	background-color: rgb(230, 230, 230);
+}
+
+h1, h2 {
+	font-family: Chivo;
+}
+
+a {
+	color: #0D1EC6;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+a:hover{
+	background-color: red;
+	transition: 0.3s;
+}
+
+.btn-blue {
+	color: white;
+	background-color: #9932CC;
+	padding: 16px 48px; 
+	border-radius: 2px;
+}
+
+.banner {
+	background-image: url("images/mountains.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+	padding: 150px 0;
+}
+
+.banner h1 {
+	font-size: 60px;
+}
+
+.banner p {
+	font-size: 30px;
+	opacity: 0.7;
+	margin-bottom: 40px;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+.card-white {
+	background-color: white;
+	box-shadow: 1px 1px 10px rgb(0,0,0,0.1);
+	padding: 24px;
+	margin: 8px;
+	width: 200px;	
+}
+
+.card-white img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.footer {
+	background-color: #404042;
+	text-align: center;
+	padding: 24px 12px;
+	margin-top: 30px;
+	color: white;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+
+.lista{
+list-style: none;
+padding-left: 0px;
+margin-top: 40px;
+}
+
+.lista li{
+display: inline;
+}
+
+.lista a{
+	color:white;
+	font-size: 60px;
+	border-radius: 2px;
+	padding: 16px 34px; 
+}
+
+.container h2{
+	color: black;
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
